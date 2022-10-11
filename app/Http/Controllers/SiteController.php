@@ -12,25 +12,20 @@ class SiteController extends Controller
         // Verificar se um usuario existe
         // Buscar dados de um usuário, etc...
 
-        $name = 'Leonardo';
+        
 
         $data = [
-            'apelido_nome' => $name,
-            'html' => '<b style = "color: #FF0000">Negrito</b>'
+            'ingredientes'=>[
+                'Ovo',
+                'Farinha',
+                'Açucar',
+                'Leite',
+                'Chocolate'
+            ]
         ];
 
         return view('bemvindo', $data);
     }
 
-    // public function exit() {
-    //     return view('sair');
-    // }
-
-    // public function users(Request $r) {
-
-    //     $data = [
-    //         'quantidade'=> $r->qnt
-    //     ];
-    //     return view('usuarios', $data);
-    // }
+    
 }

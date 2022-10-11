@@ -13,4 +13,8 @@ class SiteController extends Controller
         // Buscar dados de um usuário, etc...
         return view('bemvindo');
     }
+
+    public function exit() {
+        return view('sair');
+    }
 }

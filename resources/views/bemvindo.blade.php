@@ -9,12 +9,17 @@
 <body>
     
     
-    @for($i =0; $i< count($ingredientes); $i++)
+    {{-- @for($i =0; $i< count($ingredientes); $i++)
         <p>{{$ingredientes[$i]}}</p>
-    @endfor
+    @endfor --}}
 
     @foreach ($ingredientes as $ing)
-        <p>{{$ing}}</p>
+        <p>
+            {{$ing}} - 
+            @component('components.botao')
+                
+            @endcomponent
+        </p>
     @endforeach
     
 

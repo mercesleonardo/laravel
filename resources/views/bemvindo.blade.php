@@ -17,7 +17,22 @@
         <p>
             {{$ing}} - 
             @component('components.botao')
-                
+                @slot('href')
+                http://google.com.br
+                @endslot
+                @slot('cor')
+                    #00FF
+                @endslot
+                EDITAR
+            @endcomponent
+            @component('components.botao')
+            @slot('href')
+            http://youtube.com.br
+            @endslot
+                @slot('cor')
+                    #FF0000
+                @endslot
+                DELETAR
             @endcomponent
         </p>
     @endforeach

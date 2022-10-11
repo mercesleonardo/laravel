@@ -15,21 +15,22 @@ class SiteController extends Controller
         $name = 'Leonardo';
 
         $data = [
-            'apelido_nome' => $name
+            'apelido_nome' => $name,
+            'html' => '<b style = "color: #FF0000">Negrito</b>'
         ];
 
         return view('bemvindo', $data);
     }
 
-    public function exit() {
-        return view('sair');
-    }
+    // public function exit() {
+    //     return view('sair');
+    // }
 
-    public function users(Request $r) {
+    // public function users(Request $r) {
 
-        $data = [
-            'quantidade'=> $r->qnt
-        ];
-        return view('usuarios', $data);
-    }
+    //     $data = [
+    //         'quantidade'=> $r->qnt
+    //     ];
+    //     return view('usuarios', $data);
+    // }
 }

@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1>Bem-vindo, {{$apelido_nome}}</h1>
-    
+    <h2> 1 + 1 é: {{1+1}}</h2>
+    <h3>O código é: {{--funcao()--}}</h3>
+    <p>Código HTML: {{$html}}</p>
+    <p>Código HTML interpretado: {!!$html!!}</p>
 </body>
 </html>

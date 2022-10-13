@@ -60,4 +60,12 @@ class SiteController extends Controller
     public function components() {
       return view('comp');
     }
+
+    public function layout() {
+      return view('site');
+    }
+
+    public function layout2() {
+      return view('pagina2');
+    }
 }

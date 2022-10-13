@@ -55,4 +55,8 @@ class SiteController extends Controller
     public function comentarios() {
       return view('comentarios');
     }
+
+    public function index2() {
+      return view('include');
+    }
 }

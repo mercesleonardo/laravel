@@ -36,9 +36,6 @@ class SiteController extends Controller
         return view('bemvindo', $dados);
     }
 
-
-
-
     public function exercicio2() { 
         
         $numero = 1;
@@ -58,5 +55,9 @@ class SiteController extends Controller
 
     public function index2() {
       return view('include');
+    }
+
+    public function components() {
+      return view('comp');
     }
 }

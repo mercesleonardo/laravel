@@ -1,2 +1,2 @@
-<h2> Componente - {{$name}}</h2>
+{{$slot}}
 

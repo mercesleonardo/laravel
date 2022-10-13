@@ -51,4 +51,8 @@ class SiteController extends Controller
 
         return view('exercise', $dados);
     }
+
+    public function comentarios() {
+      return view('comentarios');
+    }
 }

@@ -5,4 +5,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiteController::class, 'index']);
  Route::get('/exercicio/{qnt}', [SiteController::class, 'exercicio2']);
-// Route::get('/usuarios/{qnt}', [SiteController::class, 'users']);
+ Route::get('/comentarios', [SiteController::class, 'comentarios']);
